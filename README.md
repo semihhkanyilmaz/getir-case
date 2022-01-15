@@ -17,7 +17,7 @@ You should set GO_ENV of your OS. Default GO_ENV is local. GO_ENV value reads ap
 
     /api/in-memory
 
-You must specify key and value
+You must specify query param key. Example /api/in-memory?key=john
 
 **Possible Responses**:
 
@@ -52,6 +52,7 @@ You must specify key and value
 
 
 **Possible Responses**:
+
 *Successful response (status code : 201)*
  
 
