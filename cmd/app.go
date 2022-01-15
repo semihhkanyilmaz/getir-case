@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"context"
 	inMemoryRepository "getir-case/internal/in-memory/repository"
 	recordRepository "getir-case/internal/record/repository"
 	router "getir-case/internal/router"
@@ -26,7 +27,9 @@ func Execute() {
 	server := &http.Server{Addr: ":" + cfg.Port}
 	server.Handler = router.InitRoutes(inMemoryRepository, recordRepository)
 
-	if err := server.ListenAndServe(); err == nil {
+	if err := server.ListenAndServe(); err != nil {
+		mc.Disconnect(context.Background())
 		log.Fatal(err)
 	}
+
 }
