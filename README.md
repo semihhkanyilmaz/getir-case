@@ -8,8 +8,7 @@ You should set GO_ENV of your OS. Default GO_ENV is local. GO_ENV value reads ap
 
 ## Requirements
 
- - go 1.17 
- - MongoDB
+ - go 1.17
 
 ## Endpoints
 
