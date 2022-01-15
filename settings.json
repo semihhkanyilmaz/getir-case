@@ -1,0 +1,16 @@
+{
+    "local":{
+        "mongo":{
+            "connectionURI":"mongodb://localhost:27017",
+            "database":"getir-case-study",
+            "collection": "records"
+        }
+    },
+    "prod":{
+        "mongo":{
+            "connectionURI":"mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/?retryWrites=true",
+            "database":"getir-case-study",
+            "collection": "records"
+        }
+    }
+}
