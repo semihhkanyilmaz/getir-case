@@ -1,8 +1,8 @@
 package inMemRepository
 
 import (
-	"errors"
 	"fmt"
+	errors "getir-case/pkg/error"
 	"sync"
 )
 
@@ -31,7 +31,7 @@ func (r *repository) Get(key string) (string, error) {
 	value, exist := r.storage[key]
 	if !exist {
 
-		return "", errors.New(fmt.Sprintf("%s not found", key))
+		return "", errors.NewError(fmt.Sprintf("%s not found", key))
 	}
 
 	return value, nil

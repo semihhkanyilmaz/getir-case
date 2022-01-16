@@ -69,7 +69,7 @@ func (h *Handler) getRecordByKey(c httpContext.Context) {
 	value, err := h.inMemoryRepository.Get(key)
 	if err != nil {
 		go log.Println(err)
-		c.Json(http.StatusNotFound, errors.NewError(err.Error()))
+		c.Json(http.StatusNotFound, err)
 		return
 	}
 
