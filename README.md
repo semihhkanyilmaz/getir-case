@@ -4,7 +4,7 @@ This project is a web api. It has 2 endpoints.
 
 ## Before running
 
-You should set GO_ENV of your OS. Default GO_ENV is local. GO_ENV value reads app settings from settings.json
+You should set GO_ENV of your OS. Default GO_ENV is "prod". GO_ENV value reads app settings from settings.json
 
 ## Requirements
 
