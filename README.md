@@ -57,7 +57,7 @@ You must specify query param key. Example /api/in-memory?key=john
 
     No content
 
-*Error response (status code: 404)*
+*Error response (status code: 400)*
 
     {
 	    "message":"string"
@@ -82,7 +82,7 @@ You must specify query param key. Example /api/in-memory?key=john
 
 If the status code is 200, the response code is equal to zero and the response msg equal to "Success". If the status code is not 200, the response code is equal to the server's status code and the response msg is equal to the server's message
 
-*success response (status code : 200 || 400 || 500)*
+*Example response (status code : 200 || 400 || 500)*
 
     {
 	    "code":0,

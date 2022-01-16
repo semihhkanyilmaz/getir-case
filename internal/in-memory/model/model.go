@@ -1,4 +1,4 @@
-package dictionaryTypes
+package inMemoryTypes
 
 type PostInMemoryRequest struct {
 	Key   string `json:"key" `
