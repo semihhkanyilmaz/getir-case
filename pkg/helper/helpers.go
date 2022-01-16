@@ -52,7 +52,7 @@ func ReadEnv() string {
 	env := os.Getenv("GO_ENV")
 
 	if strings.TrimSpace(env) == "" {
-		env = "local"
+		env = "prod"
 	}
 	return env
 }
